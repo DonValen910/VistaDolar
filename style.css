@@ -4,3 +4,61 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+body {
+  background: rgb(10, 10, 10);
+  color: rgb(245, 245, 245);
+}
+
+.header {
+  width: 100%;
+  height: 7.5rem;
+  margin: 0 0 1.5rem 0;
+  display: grid;
+  place-items: center;
+
+  & .header__title {
+    font-size: 3rem;
+  }
+
+  & .header__description {
+    color: rgb(233, 233, 233);
+  }
+}
+
+.main {
+  max-width: 53.125rem;
+  min-height: calc(100dvh - 9rem);
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 2rem;
+
+  & .main-card {
+    width: fit-content;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    border: white 1px solid;
+
+    & main-card__title {
+      text-align: center;
+    }
+
+    & .main-card__details {
+      margin-top: .5rem;
+      display: flex;
+      gap: 3rem;
+
+      & .main-card__info-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
