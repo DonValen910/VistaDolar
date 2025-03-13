@@ -45,13 +45,14 @@ body {
     border-radius: .5rem;
     border: white 1px solid;
 
-    & main-card__title {
+    & .main-card__title {
       text-align: center;
     }
 
     & .main-card__details {
       margin-top: .5rem;
       display: flex;
+      justify-content: space-evenly;
       gap: 3rem;
 
       & .main-card__info-item {
