@@ -1,0 +1,1 @@
+fetch("https://dolarapi.com/v1/dolares").then(res => res.json()).then(respuesta => console.log(respuesta))
