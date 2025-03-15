@@ -26,6 +26,24 @@ body {
   }
 }
 
+.container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+
+  & .container-select {
+    padding: .4rem .8rem;
+    border-radius: 0.5rem;
+    transition: .3s;
+    border: none;
+
+    &:focus {
+      box-shadow: 0 0 8px rgba(223, 223, 223, 0.5);
+      border: none;
+    }
+  }
+}
+
 .main {
   max-width: 53.125rem;
   min-height: calc(100dvh - 9rem);
